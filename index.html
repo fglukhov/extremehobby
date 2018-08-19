@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    body {padding: 15px;}
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      margin: 0;
+      padding: 0;
+      }
+      
+      ol > li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+      }
+      
+      ol > li:before {
+        content: counters(item, ".") ". ";
+        display: table-cell;
+        padding-right: 0.6em;
+      }
+      
+      li ol {
+        margin-top:10px;
+      }
+      li ol > li {
+      li ol > li {
+      li ol > li {
+        margin: 0;
+      }
+      
+      li ol > li:before {
+        content: counters(item, ".") " ";
+      }
+  </style>
+  <body>
+    <ol>
+      <li><a href="home.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a>
+        <ol>
+          <li><a href="catalog-item.html">Страница товара</a></li>
+        </ol>
+      </li>
+      <li><span>Заказ</span>
+        <ol>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="order-shipping.html">Доставка</a></li>
+          <li><a href="order-data.html">Данные</a></li>
+          <li><a href="order-payment.html">Оплата</a></li>
+        </ol>
+      </li>
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="blog.html">Блог</a>
+        <ol>
+          <li><a href="blog-item.html">Запись блога</a></li>
+        </ol>
+      </li>
+      <li><span>Личный кабинет</span>
+        <ol>
+          <li><a href="account-profile.html">Профиль пользователя</a></li>
+          <li><a href="account-orders.html">Заказы</a>
+            <ol>
+              <li><a href="account-orders-item.html">Страница заказа</a></li>
+            </ol>
+          </li>
+          <li><a href="account-favorites.html">Избранное</a></li>
+        </ol>
+      </li>
+      <li><a href="shipping.html">Доставка</a></li>
+      <li><a href="payment.html">Как оплатить заказ?</a></li>
+      <li><a href="404.html">404 страница</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ol>
+  </body>
+</html>

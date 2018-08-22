@@ -36,7 +36,11 @@
     display: none; }
   .contacts-section {
     display: block !important;
-    opacity: 1 !important; } }
+    opacity: 1 !important; }
+  .item-r-col .item-gallery {
+    display: none; }
+  .item-soclinks-mob {
+    display: none; } }
 
 /* Not mobile END */
 @media (max-width: 1280px) {

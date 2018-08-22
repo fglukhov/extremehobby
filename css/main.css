@@ -719,7 +719,8 @@ input[type=radio] + label .info {
 .header-top-currency {
   float: left;
   padding: 0;
-  color: #848484; }
+  color: #848484;
+  position: relative; }
 
 .header-top-address {
   float: left;

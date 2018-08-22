@@ -57,12 +57,12 @@
                     </div>
                   </div>
                   <div class="header-top-currency">
-                    <div class="currency-selector">
+                    <div class="currency-selector dropdown-trigger" data-dropdown=".currency-selector-dropdown">
                       <div class="currency-selector-val">
                         <div class="ico">&#8381;</div>
                         <div class="txt">Rub</div>
                       </div>
-                      <div class="currency-selector-dropdown">
+                      <div class="header-dropdown currency-selector-dropdown">
                         <ul>
                           <li><a class="active" href="#">
                               <div class="ico">$</div>
@@ -720,6 +720,33 @@
           </div>
         </div>
       </div>
+      <div class="modal fade form-modal buy-modal" id="buyModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Купить</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form">
+                <form>
+                  <div class="form-group">
+                    <label for="buy_name">Ваше имя</label>
+                    <input type="text" name="buy_name" id="buy_name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="buy_phone">Телефон</label>
+                    <input class="input-phone" type="text" name="buy_phone" id="buy_phone" required>
+                  </div>
+                  <div class="form-footer">
+                    <button class="btn btn-1" type="submit">Отправить              </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal fade form-modal" id="loginModal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -786,6 +813,18 @@
             <div class="modal-body">
               <p>Заказ №124598523 принят! Мы свяжемся с вами в ближайшее время после обработки покупки</p>
               <div class="success-modal-button"><a class="btn btn-1" href="#">Перейти в каталог</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade cart-modal" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Товар добавлен в корзину</p>
             </div>
           </div>
         </div>

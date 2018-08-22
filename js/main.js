@@ -344,7 +344,17 @@ $(document).ready(function () {
 
   $(".modal").on("shown.bs.modal", function() {
 
-    $(".modal").not($(this)).modal("hide");
+    //$(".modal").not($(this)).modal("hide");
+
+  });
+
+  $(".buy-modal").on("hidden.bs.modal", function() {
+
+    if ($(".fast-view-modal").hasClass("in")) {
+
+      $("body").addClass("modal-open");
+
+    }
 
   });
 

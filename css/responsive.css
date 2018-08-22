@@ -899,7 +899,7 @@
   .catalog-tmb {
     margin: 0 0 40px 0; }
   .btn-fast-view {
-    display: none; }
+    display: none !important; }
   .catalog-tmb-pic {
     padding: 0; }
   .catalog-tmb-gallery {
